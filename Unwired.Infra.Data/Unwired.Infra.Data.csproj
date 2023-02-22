@@ -17,6 +17,7 @@
 		<Product>Unwired.Infra.Data</Product>
 		<Description>Tools for Entity Framework</Description>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/leandrocavalheiro/unwired.infra.data</RepositoryUrl>
 	</PropertyGroup>
 
 	<ItemGroup>
