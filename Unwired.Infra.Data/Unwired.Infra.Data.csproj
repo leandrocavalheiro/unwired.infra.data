@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	</PropertyGroup>
+	<PropertyGroup>
+		<VersionSuffix>0.1.0</VersionSuffix>
+		<AssemblyVersion Condition=" '$(VersionSuffix)' == '' ">0.0.1</AssemblyVersion>
+		<AssemblyVersion Condition=" '$(VersionSuffix)' != '' ">$(VersionSuffix)</AssemblyVersion>
+		<Version Condition=" '$(VersionSuffix)' == '' ">0.0.1</Version>
+		<Version Condition=" '$(VersionSuffix)' != '' ">$(VersionSuffix)</Version>
+		<Company>Unwired</Company>
+		<Authors>Leandro Luiz G. Cavalheiro</Authors>
+		<Copyright>Copyright ©Unwired</Copyright>
+		<Product>Unwired.Infra.Data</Product>
+		<Description>Tools for Entity Framework</Description>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="12.0.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.3" />
+		<PackageReference Include="Unwired.Domain" Version="0.1.0" />
+		<PackageReference Include="Unwired.Models" Version="0.1.0" />
+		<None Include="..\README.md" Pack="true" PackagePath="$(PackageReadmeFile)"/>
+	</ItemGroup>
+
+</Project>
